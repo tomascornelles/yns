@@ -1,0 +1,19 @@
+@import '../App/commons.scss';
+@import '../../assets/icons/style.css';
+
+.rating {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-weight: 500;
+    margin-right: 1.7rem;
+  }
+  &__star {
+    color: $color_yellow;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin: 0.1rem;
+  }
+}

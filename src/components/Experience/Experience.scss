@@ -1,0 +1,25 @@
+@import '../App/commons.scss';
+.experience {
+  padding: 1.8rem;
+
+  fieldset {
+    border: 0;
+    padding: 0;
+  }
+  &__step1 {
+    margin-bottom: 1.5rem;
+  }
+  &__button {
+    margin-top: 2rem;
+  }
+
+  &__thankyou {
+    font-size: 2rem;
+    margin: 5rem 0;
+    text-align: center;
+
+    a {
+      color: $color_green;
+    }
+  }
+}

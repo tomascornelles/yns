@@ -1,0 +1,28 @@
+@import '../App/commons.scss';
+.reviews {
+  padding: 1.8rem;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0 2rem;
+
+    .title--h2 {
+      margin: 0;
+    }
+
+    &--link {
+      color: $color_grey2;
+    }
+  }
+}
+
+@media (min-width: $min_width) {
+  .reviews {
+    padding: 0;
+    &__title {
+      margin-top: 0;
+    }
+  }
+}

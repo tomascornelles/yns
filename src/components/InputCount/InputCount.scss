@@ -1,0 +1,50 @@
+@import '../App/commons.scss';
+
+.inputCount {
+  margin-bottom: 2rem;
+  &__check {
+    text-align: right;
+    color: $color_grey5;
+    font-size: 1rem;
+    margin-top: 0.5em;
+    &::before {
+      font-family: 'multiestetica';
+      color: $color_white;
+      border-radius: 50%;
+      width: 1.2em;
+      height: 1.2em;
+      display: inline-block;
+      text-align: center;
+      line-height: 1.2em;
+      font-size: 1em;
+      margin-right: 0.5em;
+      vertical-align: middle;
+    }
+    &.ok {
+      color: $color_green;
+      &::before {
+        content: '\f00c';
+        background: $color_green;
+      }
+    }
+    &.ko {
+      color: $color_red;
+      &::before {
+        content: '\e637';
+        background: $color_red;
+      }
+    }
+  }
+}
+
+@media (min-width: $min_width) {
+  select,
+  .inputCount {
+    max-width: 41.4rem;
+  }
+  .inputCount {
+    &--textarea {
+      max-width: 100%;
+    }
+  }
+}

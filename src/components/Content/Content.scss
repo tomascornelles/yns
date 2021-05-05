@@ -1,0 +1,37 @@
+@import '../App/commons.scss';
+
+.content {
+  padding: 1.8rem;
+
+  &__info {
+    font-size: 1.2rem;
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+
+    div {
+      margin-right: 2em;
+    }
+  }
+
+  &__icon {
+    vertical-align: middle;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    justify-content: space-between;
+    grid-gap: 20px;
+    &::after {
+      content: '';
+      flex: auto;
+    }
+  }
+
+  &__image {
+    width: 15.3rem;
+    height: 15.3rem;
+    border-radius: 0.5rem;
+  }
+}

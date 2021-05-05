@@ -1,0 +1,22 @@
+@import './commons.scss';
+
+@media (min-width: 700px) {
+  body {
+    background: $color_lightgrey3;
+  }
+  #root {
+    display: flex;
+    max-width: 114rem;
+    margin: 10.5rem auto;
+  }
+  main {
+    background: $color_white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    width: 75rem;
+  }
+  aside {
+    width: 36rem;
+    margin-left: 2.9rem;
+  }
+}
